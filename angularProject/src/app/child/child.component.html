@@ -1,0 +1,20 @@
+<h3>Child Component</h3>
+
+<button (click)="callParentGreet()">Greet </button>
+
+<br> <br>
+<p *ngIf="loggedIn"> Welcome !!!</p>
+<p *ngIf="!loggedIn"> Please Logged In</p>
+
+<input type="text" value="" placeholder="Enter text" [(ngModel)]="name2">
+
+<button mat-button (click)="onClick(name2)">Action</button>
+<span *ngIf="false"> {{name2}}</span>
+
+
+
+<button mat-icon-button [matTooltip]="'Download_ICON'">
+    <mat-icon aria-hidden="false" (click)="downloadMyFile()"  aria-label="Example home icon"  >download</mat-icon>
+  </button>
+
+  <!-- <button (click)="downloadMyFile()">download File </button> -->

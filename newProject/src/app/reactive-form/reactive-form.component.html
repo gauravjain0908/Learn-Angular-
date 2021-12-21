@@ -1,0 +1,33 @@
+<h1>Forms</h1>
+<form  [formGroup]="checkoutForm"  (ngSubmit)="submitForm()">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1"
+      formControlName="emailAddr" aria-describedby="emailHelp">
+
+      <!-- <span *ngIf="checkoutForm.get('emailAddr').touched &&
+      checkoutForm.get('emailAddr').hasError('required')">
+      Enter Email</span> -->
+
+    </div>
+
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" minlength="5"
+     maxlength="10" formControlName="passWord" id="exampleInputPassword1">
+  </div>
+
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input"
+    formControlName="chkBox" id="exampleCheck1">
+
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+
+  <button type="submit" class="btn btn-primary" (click)="submitForm()"
+  [disabled]= "!checkoutForm.valid">Submit</button>
+
+  <button type="submit" class="btn btn-link"
+  (click)="resetForm()">Clear</button>
+
+</form>

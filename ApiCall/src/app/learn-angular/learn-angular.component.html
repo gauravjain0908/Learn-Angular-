@@ -1,0 +1,22 @@
+
+<!-- Safe navigation locator  -->
+<div *ngFor="let items of events"
+class="col-md-5">
+  <h1> Upcoming Angular Project</h1>
+  <hr/>
+  id: {{items?.id}}
+   <br>
+  price : {{items?.price}};
+   <br>
+  <div  [ngSwitch]="items?.name">
+    <span  [class.green]="items?.time==='8.00 am'"  *ngSwitchCase="'Angular Connect'"> time : {{items?.time}}</span>
+    <span  [ngClass]="{bold : items?.time==='9.00 am'}" [class.green]="items?.time==='9.00 am'"  *ngSwitchCase="'Learn Connect'"> time : {{items?.time}}</span>
+    <span  [class.green]="items?.time==='7.00 am'"  *ngSwitchCase="'Angular Learn'"> time : {{items?.time}}</span>
+  </div>
+   <div *ngIf="items.location">
+     <span> Location: {{items?.location?.address}} </span> <br>
+     <span> City: {{items?.location?.City}} </span>
+   </div>
+</div>
+
+<button (click)="handleThumbnail()"></button>

@@ -1,0 +1,143 @@
+<h1 class="display"> Learn Angular </h1>
+<!--
+<input type="text" placeholder="Enter Value" maxlength="8" value="" [(ngModel)]="name"/>
+<br> <br>
+<input type="number" placeholder="Enter Number" value="" [(ngModel)]="number"  />
+
+<br> <br>
+
+<button  class="btnClass"  (click)="submit()" > Submit </button> -->
+<!--
+<div *ngIf="isDataVisible" >
+<p> {{name}} </p>
+<p>  {{number}}</p>
+</div> -->
+<!--
+<div *ngIf="true">
+    <div *ngFor="let users of userList" >
+    <p> {{users.name}} </p>
+    <p> {{users.number}}</p>
+  </div>
+</div>
+
+<br> <br>
+
+<label for="name" style="margin-left: 15px;">Name: </label>
+<input id="name" type="text" [formControl]="name1">
+
+<br> <br>
+
+<form [formGroup]="profileForm"  (ngSubmit)="onSubmit()">
+
+  <label for="first-name">First Name: </label>
+  <input id="name" type="text" formControlName="firstName">
+
+  <br> <br>
+  <label for="last-name">Last Name: </label>
+
+  <input id="name" type="text" formControlName="lastName">
+
+  <button (click)="RedirectBtn()"></button>
+</form> -->
+
+<!-- -------------------***************--------------------***********************--------------------- -->
+
+<div class="card">
+  <form  [formGroup]="userForm">
+    <div class="mt-5 box">
+      <div class="form-row">
+        <div class="col-md-12">
+          <div class="form-group mt-4">
+            <label> Name </label>
+          </div>
+          <div class="form-row" style="margin-top: 10px">
+            <div class="col">
+              <input type="text" formControlName="name"
+              class="form-control" placeholder="Name">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="form-group mt-4">
+            <label> Address </label>
+          </div>
+          <div class="form-row" style="margin-top: 10px">
+            <div class="col">
+              <input type="text" formControlName="address"
+              class="form-control" placeholder="Address">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="form-group mt-4">
+            <label> Contact No </label>
+          </div>
+          <div class="form-row" style="margin-top: 10px">
+            <div class="col">
+              <input type="number" formControlName="contactNo"
+              class="form-control" placeholder="Contact No">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="form-group mt-4">
+            <label> Gender </label>
+          </div>
+          <div class="form-row" style="margin-top: 10px">
+            <div class="col">
+              <input type="text" formControlName="gender"
+              class="form-control" placeholder="Gender">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row mt-4">
+          <div class="col-md-6">
+
+            <button type="button" class="btn btn-primary" (click)="addItem()">Add </button>&nbsp;
+            <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <div class="col-md-8 mt-4 mb-4">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th> Name</th>
+          <th> Address</th>
+          <th> Contact No</th>
+          <th> Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of listData">
+         <td> <span> {{item.name}}</span></td>
+         <td> <span> {{item.address}}</span></td>
+         <td> <span> {{item.contactNo}}</span></td>
+         <button type="button" class="btn btn-primary" (click)="removeItem(item)">Remove</button>
+        </tr>
+      </tbody>
+
+    </table>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+

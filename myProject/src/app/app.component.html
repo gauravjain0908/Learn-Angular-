@@ -1,0 +1,119 @@
+<h1> My Project 1 </h1>
+
+
+<mat-menu #appMenu="matMenu"  xPosition="after" yPosition="above">
+  <button mat-menu-item [mat-menu-trigger-for]="subMenu">FrontEnd</button>
+  <button mat-menu-item> Backend</button>
+</mat-menu>
+
+<button  class="center" mat-flat-button [mat-menu-trigger-for]="appMenu">Menu</button>
+
+<mat-menu #subMenu="matMenu">
+  <button mat-menu-item> Angular</button>
+  <button mat-menu-item> React</button>
+  <button mat-menu-item> Vue</button>
+</mat-menu>
+
+<mat-menu #lazyMenu="matMenu">
+
+  <ng-template matMenuContent let-name="name" let-hobby="hobby">
+    <button mat-menu-item>Settings</button>
+    <button mat-menu-item> Hobby is {{hobby}}</button>
+    <button mat-menu-item> Log out {{name}}</button>
+  </ng-template>
+</mat-menu>
+
+<button mat-raised-button [matMenuTriggerData]="{name: 'Gaurav', hobby:'Cricket'}" [matMenuTriggerFor]="lazyMenu">Gaurav</button>
+<button mat-raised-button [matMenuTriggerData]="{name: 'myCode', hobby:'Badminton'}"[matMenuTriggerFor]="lazyMenu">My Code</button>
+
+
+<br> <br> <br>
+<!-- #txt is template reference here we used to bind the values of one to another -->
+<input type="text" size="40" #txt />
+<br> <br>
+<button (click)="btnClick(txt)">Click</button>
+
+<p>{{name}} </p>
+
+<!-- Ng Model is used in two way data binding  -->
+
+<input type="text" [value]="propertyBinding" [(ngModel)]="propertyBinding"/>
+<h2>{{propertyBinding}}</h2>
+
+<div>
+  <button value= "Washing Machine" (click)="onItemAdded($event)">Washing Machine </button>
+  <button value= "School Bag" (click)="onItemAdded($event)">School Bag</button>
+  <button value= "Laptop" (click)="onItemAdded($event)">Laptop</button>
+  <button value= "productAdded" (click)="onItemAdded($event)">Singh </button>
+
+   <h2> {{msg}}</h2>
+</div>
+
+<div class="container"  (change)="changeText($event)">
+  <div class="col-md-4">
+    <select class="form-control">
+      <option value="Laptop">Laptop</option>
+      <option value="Apple">Apple</option>
+      <option value="Radio">Radio</option>
+      <option value="Mobile">Mobile</option>
+
+    </select>
+  </div>
+
+
+  <div class="col-md-12" [ngSwitch]="changeValue">
+    <h2 class="textStyle" *ngSwitchCase="'Laptop'"> Laptop  </h2>
+    <h2 class="textStyle" *ngSwitchCase="'Apple'">  Apple    </h2>
+    <h2 class="textStyle" *ngSwitchCase="'Radio'">  Radio    </h2>
+    <h2 class="textStyle" *ngSwitchCase="'Mobile'"> Mobile  </h2>
+  </div>
+</div>
+<br> <br>
+
+<div class="row">
+  <div class="col-md-4">
+   <app-cards>
+    <h5 class="card-title">Laptop</h5>
+    <a routerLink = "laptop" class="btn btn-success btnClass">Know More About Laptop</a>
+   </app-cards>
+  </div>
+  <div class="col-md-4">
+    <app-cards>
+      <h5 class="card-title">Washing Machine</h5>
+      <a routerLink = "laptop" class="btn btn-success btnClass">Know More About Washing Machine</a>
+    </app-cards>
+   </div>
+   <div class="col-md-4">
+     <app-cards>
+       <h5 class="card-title">Mobile</h5>
+       <a routerLink = "laptop" class="btn btn-success btnClass">Know More Abośśut Mobile</a>
+    </app-cards>
+  </div>
+  </div>
+ <app-user-table></app-user-table>
+<!--
+<nav class="navbar">
+  <h3 style="text-align: center;">Quill Js Editor </h3>
+</nav>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+
+      <quill-editor [style]="{height: '200px'}"
+
+      (onEditorChanged)="changedEditor($event)"></quill-editor>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8 bg-light">
+      <p></p>
+    </div>
+  </div>
+</div> -->
+
+
+
+

@@ -1,0 +1,30 @@
+     HTTP Headers :-
+
+** Http Header is in the class HttpHeader
+
+1. Http header are immutable they cannot be modified
+2. example :- Http header
+ a) Authorization
+ b) Content - type
+
+3. We can add Headers to POST GET DELETE PUT
+
+4. We define the header using Http Headers
+
+5. Http Header consist of 7 method
+
+a) Append
+b) Has
+c) Get
+d) Keys
+e) getAll
+f) Set
+h) delete
+
+6) We can pass any number of headers
+
+7) dont send Duplicate Headerin same request
+   header('content-type' , 'application/json')
+
+
+

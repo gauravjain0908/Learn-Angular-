@@ -1,0 +1,20 @@
+<h2 style="display: flex; justify-content: center;"> API FULL TUTORIAL </h2>
+<!--
+<ul *ngFor="let users of user">
+  <li>{{users.name}}</li>
+  <li>{{users.email}}</li>
+</ul> -->
+
+<form class="example-form">
+  <mat-form-field style="margin-left: 20px" class="example-full-width" appearance="fill">
+    <mat-label>Enter Value </mat-label>
+    <input matInput placeholder="placeholder" value="" style="margin-right: 10px" #tmp required>
+  </mat-form-field>
+
+  <div class="example-button-row">
+
+    <button (click)="submit(tmp)"  mat-raised-button style="color: aqua; margin-left:20px; outline-color: aquamarine;">Basic</button>
+  </div>
+
+  <br> <br>
+  <router-outlet></router-outlet>

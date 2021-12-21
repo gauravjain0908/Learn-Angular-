@@ -1,0 +1,3 @@
+Http Interceptor
+
+Client (ui) -> Request    -> Interceptor   ->    <- response server(API)

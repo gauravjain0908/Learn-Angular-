@@ -1,0 +1,10 @@
+.btnClass
+{
+  background-color: red;
+}
+
+.display{
+
+  display: flex;
+  justify-content: center; align-items: center;
+}

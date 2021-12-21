@@ -1,0 +1,30 @@
+
+.row
+{
+  padding-left:50px;
+  min-height: 300px;
+  display: flex;
+}
+.card
+{
+  min-height: 180px;
+}
+.card-title
+{
+  justify-content: center;
+  display: flex;
+}
+.btnClass{
+
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  text-align: center;
+  justify-content: center;
+}
+.card-text
+{
+  color: royalblue;
+  justify-content: center;
+  display: flex;
+}

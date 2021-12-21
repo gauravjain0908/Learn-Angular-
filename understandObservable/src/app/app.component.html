@@ -1,0 +1,20 @@
+<h1>Learn Observable from Scratch </h1>
+
+<a routerLink="home">Home</a>&nbsp;
+<a routerLink="about">About</a> &nbsp;
+<a routerLink="userDetail"> User Detail </a>&nbsp;
+<a [routerLink]="['/i18']" routerLinkActive="active"> i18Language </a> &nbsp;
+<a [routerLink]="['/templateForm']" routerLinkActive="active">Template Form </a> &nbsp;
+<a [routerLink]="['/materialUI']" routerLinkActive="active">Angular Material </a> &nbsp;
+<a [routerLink]="['/pipe']" routerLinkActive="active">Pipe</a> &nbsp;
+<a [routerLink]="['/simpleForm']" routerLinkActive="active">Simple Form </a> &nbsp;
+<a [routerLink]="['/myForm']" routerLinkActive="active">My Form </a> &nbsp;
+<a [routerLink]="['/animation']" routerLinkActive="active">Animation</a> &nbsp;
+<a [routerLink]="['/offlineServiceWorker']" routerLinkActive="active">Service Worker </a>&nbsp;
+<a [routerLink]="['/unitTesting']" routerLinkActive="active">Unit Testing </a>&nbsp;
+<a [routerLink]="['/nativeWebComponent']" routerLinkActive="active">Web Component </a>
+<p *ngIf="isActivated"> Activated </p>
+
+<router-outlet></router-outlet>
+
+

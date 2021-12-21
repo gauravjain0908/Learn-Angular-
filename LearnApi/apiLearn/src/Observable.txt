@@ -1,0 +1,15 @@
+Provides Support for passing message between parts of your application
+
+They are used frequently in angular and are a technique for event
+handling, asynchronous, and handling multiple value
+
+An Observable can deliver multiple value of any types
+literals , message or events.
+
+It is an sequence of data which is emitted asynchronous.
+
+Observable can create in two ways
+
+1. RxJS method : convert any array into obserbale
+2. new Observable
+

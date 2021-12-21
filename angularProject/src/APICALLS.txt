@@ -1,0 +1,6 @@
+toPromise :- make a call and once you get data -> Do not watch or get other data that you get
+-> means stop listening for more data changes
+-> .then to listen only once and we add finally to show our
+   message.
+
+* Observable and Type Casting

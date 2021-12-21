@@ -1,0 +1,28 @@
+
+    {
+    "_______BUTTONS_______":"_______BUTTONS_______",
+
+    "VIEW_BTN": "View",
+    "EDIT_BTN": "Assign Filing Date & Application Number",
+    "CANCEL_BTN": "Cancel",
+    "SUBMIT_BTN":"Submit",
+    "ACKNOWLEDGE_RECEIPT_BTN": "Acknowledge Receipt",
+    "ASK_FOR_REVISION_BTN": "Ask for revision",
+    "REFUSE_APPLICATION_BTN": "Refuse Application",
+    "DOWNLOAD_BTN": "Download",
+    "PAID_BTN": "Paid",
+    "NOT_PAID_BTN": "Not Paid",
+    "ACCPT_BTN": "Accept",
+    "REJECT_BTN": "Reject",
+    "YES_BTN": "Yes",
+    "NO_BTN": "No",
+    "SAVE_BTN": "save",
+    "DETAIL_HIST_BTN": "Show History",
+    "HIDE_HIST_BTN": "Hide History",
+    "DONOT_FILE_BTN": "Remove Application",
+    "CANC_APPLICATION_BTN": "Cancel Application",
+    "CONTACT_APPLICANT_BTN": "Contact Applicant",
+    "NULLIFY_APPLICATION_BTN": "Nullify Application",
+    "RECOMMENDATION_BTN": "View Recommendations",
+    "OBJECTION_BTN": "Enter Objection"
+  }

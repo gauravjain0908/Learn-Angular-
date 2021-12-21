@@ -1,0 +1,67 @@
+<p>basics works!</p>
+<span class="btn-class">
+<button type="button"> {{ 'VIEW_BTN' }}</button>
+
+</span>
+
+<!-- <table>
+<tr>
+  <td>S.No</td>
+  <td>Name</td>
+  <td>Age</td>
+</tr>
+<tr *ngFor="let record for records; let i = index;
+let evenRecord = even; let oddRecord = odd;" [ngClass]=
+  "{odd: oddRecord, even: evenRecord}">
+  <td>{{i}}</td>
+  <td>{{record.name}}</td>
+   <td>{{record.age}}</td>
+</tr>
+</table> -->
+<br> <br>
+<!-- <input type="file" class="file-upload" onchange="console.log(event.target.files)"> -->
+
+
+<mat-card>
+  <mat-card-header>
+
+    <div mat-card-avatar></div>
+   <mat-card-title> Gaurav </mat-card-title>
+ </mat-card-header>
+  <mat-card-content>
+    <p> This is My Demo </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button color="primary">LIKE</button>
+    <button mat-button color="primary">DELETE</button>
+    <div class="flex-spacer"></div>
+    <button mat-icon-button><mat-icon>Publish</mat-icon></button>
+  </mat-card-actions>
+</mat-card>
+
+
+
+<input type="file" requiredFileType="image/png" class="file-upload" multiple>
+<input type="file" class="file-input"
+       (change)="onFileSelected($event)" #fileUpload multiple>
+
+<div class="file-upload">
+
+   {{filename || "No file uploaded yet."}}
+
+    <button mat-mini-fab color="primary" class="upload-btn"
+      (click)="fileUpload.click()">
+        <mat-icon>attach_file</mat-icon>
+    </button>
+</div>
+
+
+
+
+
+
+
+
+
+
+

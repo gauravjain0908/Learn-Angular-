@@ -1,0 +1,10 @@
+<div>
+  <h1 style="margin-left: 30px; justify-content: center; text-align: center; display: flex;"> Form App </h1>
+</div>
+
+<div class="form-floating mb-4">
+  <input type="number" value="" placeholder="Enter value" style="margin-top: 10px; margin-left: 30px;"
+  [(ngModel)]="value">
+</div>
+
+  <input  (click)="submitBtn(value)" class="btn btn-primary" type="submit" value="Submit" style="margin-top: 10px; margin-left: 30px;">

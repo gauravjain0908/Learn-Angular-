@@ -1,0 +1,20 @@
+
+<p>language works!</p>
+
+<div>
+  <p>
+    {{'HOME.TITLE' | translate }}
+  </p>
+  <p>
+    {{'HOME.TEXT' | translate}}
+  </p>
+  <p>
+    <label for="">
+      <select #langSelect  (change)="translate.use(langSelect.value)">
+        <option  *ngFor="let lang of translate.getLangs()" [value]="lang">
+        {{lang}}
+        </option>
+      </select>
+    </label>
+  </p>
+</div>

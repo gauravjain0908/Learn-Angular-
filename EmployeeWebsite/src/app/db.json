@@ -1,0 +1,44 @@
+{
+  "Users":[
+    {
+      "id":1,
+      "firstName": "Gaurav",
+      "lastName" : "Jain",
+       "email":"gauravjain0931@gmail.com",
+       "mobile": "9773754778",
+       "salary":"15000"
+    },
+    {
+      "id":2,
+      "firstName": "Gaurav",
+      "lastName" : "Jain",
+       "email":"gauravjain0931@gmail.com",
+       "mobile": "8713754778",
+       "salary":"35000"
+    },
+    {
+      "id":3,
+      "firstName": "Gaurav",
+      "lastName" : "Jain",
+       "email":"gauravjain0931@gmail.com",
+       "mobile": "9777854778",
+       "salary":"25000"
+    },
+    {
+      "id":4,
+      "firstName": "Gaurav",
+      "lastName" : "Jain",
+       "email":"gauravjain0931@gmail.com",
+       "mobile": "9773754778",
+       "salary":"11000"
+    },
+    {
+      "id":5,
+      "firstName": "Mahinder",
+      "lastName" : "Jain",
+      "email":"gauravjain0931@gmail.com",
+      "mobile": "9773754778",
+      "salary":"15000"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+tr.odd{
+
+  background-color: red;
+  color: white;
+}
+
+tr.even{
+  background-color: black;
+  color: white;
+}
+
+.mat-card{
+
+  border-radius: 2px;
+  max-width: 300px;
+  margin: auto;
+}
+.mat-card-actions{
+
+  display: flex;
+}
+.mat-card-actions .flex-spacer{
+  width: 100%;
+}
