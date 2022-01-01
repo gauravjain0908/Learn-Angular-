@@ -10,12 +10,14 @@ import {MatButtonModule} from '@angular/material/button'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToolTipListPipe } from './tool-tip-list.pipe';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { PaginationComponent } from './pagination/pagination.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolTipListPipe,
-    ProgressBarComponent
+    ProgressBarComponent,
+    PaginationComponent
   ],
   imports: [
     BrowserModule,

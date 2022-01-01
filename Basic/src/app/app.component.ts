@@ -6,7 +6,7 @@ import { Component, OnChanges, SimpleChanges } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnChanges{
-  title: number;
+  
   status: any = [];
   Item: any = [];
 
