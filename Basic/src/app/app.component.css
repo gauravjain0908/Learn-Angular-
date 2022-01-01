@@ -1,0 +1,78 @@
+::ng-deep .reason-tooltip {
+   /* background-color: #3652ff; */
+  height: 200px;
+  width: 300px;
+  font-size: 13.5px;
+  white-space: pre-line;
+}
+/*
+mat-icon{
+  margin-left: 350px;
+} */
+
+.progress-bar {
+  width: 7px;
+  height: 7px;
+  transform: scaleY(-1); display: inline-block;margin-right: 0.5rem;
+  border-radius: 100%;
+}
+
+.progress-bar-green {
+  background: #4ed400;
+}
+.progress-bar-grey {
+  background: #d8d8d8;
+}
+/* mat-icon:hover
+{
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+} */
+
+/* ul:hover
+{
+  background: #d8d8d8;
+} */
+
+/* .progress-bar:hover
+{
+  background-color: #d8d8d8;
+}
+
+li:hover
+{
+  background-color: #d8d8d8;
+} */
+
+/* Tooltip Hover */
+.tooltip {
+  position: relative;
+  margin-left: 200px;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 220px;
+  height: 200px;
+  background-color: black;
+  color: #fff;
+  text-align: start;
+  border-radius: 2px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.item-list
+{
+  list-style-type: none;
+  font-size: small;
+  padding: 5px;
+}

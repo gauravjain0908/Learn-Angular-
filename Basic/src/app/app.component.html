@@ -1,2 +1,64 @@
-<h1> Learn Quill Editor </h1>
-<quill-editor class="content-editor" [placeholder]="''"> </quill-editor>
+<!-- <mat-icon mat-raised-button matTooltip="Submitted"
+  matTooltipClass="reason-tooltip">
+  help
+</mat-icon>
+
+<span class="progress-bar progress-bar-green"></span>
+<span class="progress-bar progress-bar-grey"></span>
+<span class="progress-bar progress-bar-grey"></span>
+<span class="progress-bar progress-bar-grey"></span> -->
+
+<!--
+<div class="tooltip">
+  <mat-icon>
+    <ul>
+      <li class="tooltiptext" *ngFor="let item of Item; let i= index">
+        <p>{{item}}</p>
+        <span *ngIf="status===i" class="tooltiptext">
+          <span class="progress-bar progress-bar-green"></span>
+          <span class="progress-bar progress-bar-grey"></span>
+          <span class="progress-bar progress-bar-grey"></span>
+          <span class="progress-bar progress-bar-grey"></span>
+        </span>
+      </li>
+    </ul>
+    help
+  </mat-icon>
+</div> -->
+
+
+<br> <br>
+
+<mat-icon class="tooltip">help
+  <span class="tooltiptext">
+    <li *ngFor="let item of Item; let i= index"  class="item-list">
+      {{item}}
+      <span [ngSwitch]="true" style="margin-left: 25px;">
+        <span *ngSwitchCase="status[i]==='SUBMITTED'">
+          <span class="progress-bar progress-bar-green"></span>
+          <span class="progress-bar progress-bar-grey"></span>
+          <span class="progress-bar progress-bar-grey"></span>
+          <span class="progress-bar progress-bar-grey"></span>
+        </span>
+        <span *ngSwitchCase="status[i]==='RECEIVED'">
+          <span class="progress-bar progress-bar-green"></span>
+          <span class="progress-bar progress-bar-green"></span>
+          <span class="progress-bar progress-bar-grey"></span>
+          <span class="progress-bar progress-bar-grey"></span>
+        </span>
+        <span *ngSwitchCase="status[i]==='DULY-FILED'">
+          <span class="progress-bar progress-bar-green"></span>
+          <span class="progress-bar progress-bar-green"></span>
+          <span class="progress-bar progress-bar-green"></span>
+          <span class="progress-bar progress-bar-grey"></span>
+        </span>
+        <span *ngSwitchCase="status[i]==='GRANTED'">
+          <span class="progress-bar progress-bar-green"></span>
+          <span class="progress-bar progress-bar-green"></span>
+          <span class="progress-bar progress-bar-green"></span>
+          <span class="progress-bar progress-bar-green"></span>
+        </span>
+      </span>
+    </li>
+  </span>
+</mat-icon>
